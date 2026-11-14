@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "name": "Baldic OS",
+  "version": "1.0",
+  "codename": "dream",
+  "id": "baldic",
+  "url": "https://github.com/",
+  "iso": "C:\\Users\\yigit\\Downloads\\debian-live-13-amd64-kde.iso",
+  "output_dir": "C:\\Users\\yigit\\Downloads\\baldic-build",
+  "output_name": "baldic-os-1.0-amd64.iso",
+  "desktop": "kde",
+  "replace_desktop": false,
+  "locale": "tr_TR.UTF-8",
+  "keyboard": "tr",
+  "timezone": "Europe/Istanbul",
+  "live_user": "baldic",
+  "live_autologin": true,
+  "accent_color": "#ee8206",
+  "compression": "zstd",
+  "install_packages": ["htop", "neofetch"],
+  "remove_packages": [],
+  "grub_timeout": 5,
+  "generate_folder_variants": true,
+  "remove_build_tools": true,
+  "clean_apt_cache": true,
+  "cpp_projects": [
+    {
+      "name": "baldic-store",
+      "path": "C:\\projeler\\baldic-store",
+      "version": "1.0",
+      "build_system": "cmake",
+      "build_deps": ["qt6-base-dev", "qt6-base-dev-tools"],
+      "runtime_deps": [],
+      "desktop_entry": true,
+      "comment": "Baldic Magaza",
+      "categories": "System;"
+    }
+  ]
+}
